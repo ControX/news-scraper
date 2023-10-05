@@ -17,7 +17,7 @@ try:
     print(soup.prettify())  # This line should be here
 
     # Find the news headlines on the page
-    headlines = soup.select("span.titleline > a")
+    headlines = soup.select(".storylink")
 
     # Print out the headlines
     print(f"Number of headlines found: {len(headlines)}")
